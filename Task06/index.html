@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form task</title>
+  </head>
+  <body>
+    <h1 class="headElm">Market Products</h1>
+    <!-- FORM -->
+    <div id="formDiv">
+      <form id="mainForm">
+        <div>
+          <label>Product Name </label>
+          <input id="name" type="text" required />
+
+          <label>Product Price </label>
+          <input id="price" type="number" min="1" required />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description" required></textarea>
+
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option>Fruits</option>
+            <option>Vegetables</option>
+            <option>Dairy</option>
+            <option>Meat</option>
+          </select>
+        </div>
+        <div class="availDiv">
+          <label for="availability">Available</label>
+          <input id="availability" type="checkbox" checked />
+        </div>
+        <button id="subBtn" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <hr />
+
+    <div class="searchDiv">
+      <input type="search" id="searchInput" placeholder="Search by name here" />
+    </div>
+    <!-- TABLE -->
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>porduct name</th>
+          <th>price</th>
+          <th>description</th>
+          <th>category</th>
+          <th>Availability</th>
+          <th>actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>

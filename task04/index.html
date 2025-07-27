@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 04</title>
+  </head>
+  <body>
+    <h1 id="welcome">Welcome Task Manager Application</h1>
+    <br />
+    <!-- -->
+    <div>
+      <label for="taskName">enter task name :</label>
+      <input type="text" id="taskName" required />
+    </div>
+    <!-- -->
+    <br />
+    <!-- -->
+    <div>
+      <label>enter task type :</label>
+      <div>
+        <input type="radio" id="task" name="taskType" value="Task" checked />
+        <label for="task">Task</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="inProgress"
+          name="taskType"
+          value="In Progress"
+        />
+        <label for="inProgress">In Progress</label>
+      </div>
+      <div>
+        <input type="radio" id="done" name="taskType" value="Done" />
+        <label for="done">Done</label>
+      </div>
+    </div>
+    <button type="button" onclick="addTask()">Submit</button>
+    <!-- -->
+
+    <h2 id="result"></h2>
+    <script src="main.js"></script>
+  </body>
+</html>
